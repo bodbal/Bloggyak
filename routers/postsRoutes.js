@@ -4,7 +4,10 @@ import * as Post from "../data/post.js"
 const router = express.Router();
 
 router.get("/", (req,res) => {
-    res.send("Posts");
+    
+    res.
 })
+
+
 
 export default router;
