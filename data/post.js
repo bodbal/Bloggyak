@@ -9,7 +9,7 @@ db.prepare(`CREATE TABLE IF NOT EXISTS posts(
 
     export const getPost = () => db.prepare("SELECT * FROM posts").get();
 export const getPostById = (id) =>
-  db.prepare(`SELECT * FROM posts WHERE id = ${id}`).get(id);s
+  db.prepare(`SELECT * FROM posts WHERE id = ${id}`).get(id);
 export const savePost = (userId, title, content) =>
   db
     .prepare(`INSERT INTO posts (userId = ?, title = ?, content = ?), values = (?,?)`)
